@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body
+{
+    background-color: antiquewhite;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu';
+}
+
+nav ul{
+    /* to make items horizontal */
+    display: flex; 
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img
+{
+    width:44px;
+    padding: 0 8px;
+}
+.brand
+{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container
+{
+  
+    height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round';
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url("C:/Users/91749/Desktop/Spofify clone/pic.jpg");
+    /* background-image: url("https://tse1.mm.bing.net/th?id=OIP.GiSZ1h9km9KNZhZNZTBSxAHaEK&pid=Api&rs=1&c=1&qlt=95&w=176&h=98"); */
+    background-size:115% ;
+    background-repeat: no-repeat;
+  
+}
+
+.bottom
+{
+    position: sticky;
+    background-color: black;
+    height: 130px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Varela Round';
+} 
+
+.icons
+{
+    margin-top: 14px;
+}
+.icons i{
+    /* used to point while clicking that item  */
+    cursor:pointer;
+}
+
+#progressBar
+{
+    width: 80vw;
+    cursor:pointer;
+
+}
+
+.songItemContainer
+{
+    margin-top: 17px;
+}
+
+.songItem
+{
+    height: 48px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 7px 0;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songName
+{
+    font-family: 'Varela Round';
+    font-weight:bold;  
+}
+
+.songItem img{
+    width: 45px;
+    margin: 0 23px;
+    border-radius: 40px;
+ 
+}
+
+.time
+{
+    margin: 0 23px;
+}
+
+.time i{
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.songInfo
+{
+    position: absolute;
+    left: 10vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media (max-width:1000px)
+{
+    .songList
+    {
+       
+       /* display: flex; */
+       /* align-items: center; */
+      margin-left: 7%;
+    }
+    .container{
+       
+        height: 60vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round';
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    /* background-image: url("C:/Users/91749/Desktop/Spofify clone/pic.jpg"); */
+    background-repeat: no-repeat;
+    background-image: url("https://images.pexels.com/photos/10230830/pexels-photo-10230830.jpeg?auto=compress&cs=tinysrgb&w=600");
+    }
+
+    .songItem
+{
+    height: 55px;
+    
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 14px 0;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 34px;
+}
+.bottom
+{
+    margin-top: 5%;
+}
+nav ul {
+    height: 110px;
+}
+.brand img
+{
+    width:65px;
+    padding: 0 8px;
+}
+.brand
+{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+ li
+{
+    font-size: 1.5rem;
+}
+
+}
